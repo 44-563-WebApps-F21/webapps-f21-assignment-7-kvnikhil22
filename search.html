@@ -104,6 +104,12 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
             }
             return Math.max(Math.abs(v2 - v1), Math.abs(h2 - h1))
         }
+        function newGame(){
+            clickCount =0
+            let treasureLocation = Math.random(0,24)
+            document.getElementById("tries").innerHTML="Number of clicks is "+clickCount
+            document.getElementById("distance").innerHTML="Distance is Unknown"
+        }
         </script>
 </body>
 
